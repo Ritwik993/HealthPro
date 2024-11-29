@@ -21,7 +21,7 @@ const Result = ({percentage}) => {
             <div className='res_link'>
                 <Link to='/'>Home</Link>
                 <p>/</p>
-                <Link to="/">IVF Success Rate Calculator</Link>
+                <Link to="/" className="link_sub">IVF Success Rate Calculator</Link>
                 <p>/</p>
                 <Link to="/result" className='link_text'>Result</Link>
             </div>

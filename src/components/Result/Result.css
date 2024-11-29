@@ -20,7 +20,6 @@
     gap: 24px;
     justify-self: flex-start;
     align-self: flex-start;
-   
 }
 
 .img_res{
@@ -300,5 +299,11 @@
 
     svg{
         width: 250px;
+    }
+
+    .link_sub{
+        width: 100%;
+        font-size: 18px;
+        /* text-align: left; */
     }
 }
