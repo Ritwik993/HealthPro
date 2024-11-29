@@ -61,7 +61,7 @@
 
 .flex_res_item1{
     /* width: 50vw; */
-    border:1px solid white;
+    /* border:1px solid white; */
     display: flex;
     /* padding-left: 100px; */
     /* margin-right: -100px ; */
@@ -85,7 +85,7 @@
     justify-content: center;
     width: 50vw;
     /* max-width: 1271px; */
-    border:1px solid red;
+    /* border:1px solid red; */
     position: relative;
     flex: 1;
 
