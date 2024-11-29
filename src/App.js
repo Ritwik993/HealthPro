@@ -1,23 +1,40 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Calculator from './components/Calculator/Calculator.jsx';
+import Navbar from './components/Navbar/Navbar';
+import Result from './components/Result/Result.jsx';
+import { createBrowserRouter, Outlet, Router, RouterProvider } from 'react-router-dom';
 
 function App() {
+  const[percentage,setPercentage]=useState(0);
+  
+const AppLayout = () => {
+  return (
+    <>
+      <Navbar/>
+      <Outlet/>
+    </>
+  );
+};
+  const appRouter=createBrowserRouter([
+   {
+    path:'/',
+    element:<AppLayout/>,
+    children:[
+      {
+        path:'/',
+        element:<Calculator setPercentage={setPercentage}/>
+      },
+      {
+        path:'/result',
+        element:<Result percentage={percentage}/>
+      }
+    ]
+   }
+  ])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RouterProvider router={appRouter}/>
     </div>
   );
 }

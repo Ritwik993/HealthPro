@@ -1,0 +1,236 @@
+.result_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    background-color: #303030;
+    color:white;
+    position:relative;
+    min-height: 100vh;
+    margin: auto;
+}
+
+
+
+.section2_res{
+    margin-top:74px;
+    display: flex;
+    gap: 24px;
+    justify-self: flex-start;
+    align-self: flex-start;
+   
+}
+
+.img_res{
+    /* position: absolute; */
+    /* left: 0; */
+}
+
+.heading_res{
+    font-size: 44px;
+    font-weight: 500;
+}
+
+
+.res_link {
+    display: flex;
+    gap: 10px;
+    align-self: flex-start;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.link_text {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.responsive{
+   display: none;
+}
+
+.bottom_section{
+    display: flex;
+    width: 100vw;
+    padding-left: 50px;
+    padding-right: 150px;
+    /* gap: 500px; */
+}
+
+.flex_res_item1{
+    width: 50vw;
+    /* border:1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subheading_res{
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    margin-top: 35px;
+}
+
+.flex_res_item2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    /* border:1px solid red; */
+    position: relative;
+
+}
+
+.image_blur{
+    position: absolute;
+    /* top: 0; */
+    bottom:100px;
+    left: 50px;
+    object-fit: cover;
+}
+
+.image_right{
+    object-fit: cover;
+    position:sticky;
+    right: 0;
+    width: 1271px;
+    height: 757px;
+    /* position: absolute; */
+}
+
+.outer-circle {
+    width: 292px;
+    height: 292px;
+    border-radius: 50%;
+    background-color: rgba(91, 212, 137, 0.3); 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.progressBarCircle {
+    position: absolute;
+    width: 60%; /* Change to full width */
+    height: 100%;
+    top: 0;
+    right: 0; /* Ensure it starts from the right side */
+    background-color: rgba(91, 212, 137, 1);
+    transform-origin: right center; /* Rotate from the right side */
+    transform: rotate(0deg); /* Default position */
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%); /* Clip to right side only */
+    z-index: 1;
+}
+
+.inner-circle {
+    width: 200px;
+    height: 200px;
+    background-color: #032706;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+}
+
+@media (max-width:750px) {
+    .result_container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        /* overflow-x: hidden; */
+    }
+
+    .res_link{
+        display: none;
+    }
+
+    .responsive{
+        display: block;
+        display: flex;
+        gap: 20px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .responsive_link1{
+        color:white;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .image_arrow{
+        width: 24px;
+        height: 24px;
+    }
+    .bottom_section{
+        flex-direction: column;
+    }
+
+    .bottom_section{
+        display: flex;
+        width: 100vw;
+        margin-top: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        flex: 1;
+        /* gap: 500px; */
+    }
+    
+    .flex_res_item1{
+        width: 100vw;
+        /* border:1px solid white; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .img_res{
+        width: 49px;
+    }
+    .heading_res{
+        font-size: 16px;
+    }
+    
+    .subheading_res{
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        margin-top: 5px;
+    }
+
+    .flex_res_item2{
+        display: flex;
+        width: 100vw;
+        position: relative;
+        flex:1;
+        overflow: hidden;
+    }
+
+    .image_left{
+        width: 40vw;
+        object-fit: cover;
+    }
+
+    .image_blur{
+        position: absolute;
+        top: 0;
+        bottom:0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .image_right{
+        object-fit: cover;
+        position:sticky;
+        width: 100%;
+        height: 100%;
+        justify-self: flex-end;
+        align-self:flex-end;
+        /* position: absolute; */
+    }
+}
