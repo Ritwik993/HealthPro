@@ -1,7 +1,7 @@
 .calculator_container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     padding-top: 40px;
     padding-left: 50px;

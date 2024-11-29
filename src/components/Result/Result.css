@@ -1,7 +1,8 @@
 .result_container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
+    /* max-width: 1536px; */
     align-items: center;
     padding-top: 40px;
     background-color: #303030;
@@ -59,7 +60,7 @@
 }
 
 .flex_res_item1{
-    width: 50vw;
+    /* width: 50vw; */
     /* border:1px solid white; */
     display: flex;
     flex-direction: column;
@@ -78,7 +79,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50vw;
+    /* width: 50vw; */
     /* border:1px solid red; */
     position: relative;
 
@@ -96,7 +97,7 @@
     position: absolute;
     /* top: 0; */
     bottom:100px;
-    left: 50px;
+    /* left: 50px; */
     object-fit: cover;
 }
 

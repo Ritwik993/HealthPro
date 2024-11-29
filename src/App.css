@@ -14,7 +14,17 @@ a{
 body{
   font-family: 'Poppins',sans-serif;
   /* background-color: #FCFAF5; */
-  width: 100vw;
+  /* width: 100vw; */
   overflow-x: hidden;
  
+}
+
+.container {
+  width: 1536px;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
