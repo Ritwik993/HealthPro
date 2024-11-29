@@ -5,6 +5,7 @@ import indicator from "../../assests/1.svg";
 import blur from "../../assests/Ellipse 626.svg";
 import human from "../../assests/man-woman.svg";
 import { Link } from 'react-router-dom';
+import bottom from "../../assests/bottom.svg"
 
 const Result = ({percentage}) => {
     
@@ -96,7 +97,14 @@ const Result = ({percentage}) => {
                     <img src={blur} className='image_blur' />
                     <img src={human} className='image_right' />
                 </div>
+                
             </div>
+
+            <div className='bottom_container'>
+            <img src={bottom} className='bottom_blur' />
+            <button className='bottom_btn'>Start private consultation</button>
+            </div>
+         
         </div>
     );
 };
