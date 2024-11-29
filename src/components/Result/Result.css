@@ -115,14 +115,14 @@
 
 .progressBarCircle {
     position: absolute;
-    width: 60%; /* Change to full width */
+    width: 60%; 
     height: 100%;
     top: 0;
-    right: 0; /* Ensure it starts from the right side */
+    right: 0; 
     background-color: rgba(91, 212, 137, 1);
-    transform-origin: right center; /* Rotate from the right side */
-    transform: rotate(0deg); /* Default position */
-    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%); /* Clip to right side only */
+    transform-origin: right center; 
+    transform: rotate(0deg); 
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%); 
     z-index: 1;
 }
 
@@ -203,9 +203,10 @@
     .flex_res_item2{
         display: flex;
         width: 100vw;
-        position: relative;
+        margin-top: 20px;
+        /* position: relative; */
         flex:1;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     .image_left{
@@ -225,7 +226,7 @@
     }
 
     .image_right{
-        object-fit: cover;
+        object-fit: contain;
         position:sticky;
         width: 100%;
         height: 100%;

@@ -2,7 +2,7 @@ import React from 'react';
 import './Result.css';
 import arrow_left from "../../assests/ArrowLeft.png";
 import indicator from "../../assests/1.svg";
-import blur from "../../assests/blur.png";
+import blur from "../../assests/Ellipse 626.svg";
 import human from "../../assests/man-woman.svg";
 import { Link } from 'react-router-dom';
 
