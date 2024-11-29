@@ -298,4 +298,8 @@
         outline: none;
         cursor: pointer;
     }
+
+    svg{
+        width: 250px;
+    }
 }
