@@ -96,14 +96,16 @@ const Result = ({percentage}) => {
                 <div className='flex_res_item2'>
                     <img src={blur} className='image_blur' />
                     <img src={human} className='image_right' />
+                    <div className='bottom_container'>
+            <img src={bottom} className='bottom_blur' />
+            <button className='bottom_btn'>Start private consultation {' →'}</button>
+            </div>
                 </div>
+              
                 
             </div>
 
-            <div className='bottom_container'>
-            <img src={bottom} className='bottom_blur' />
-            <button className='bottom_btn'>Start private consultation</button>
-            </div>
+            
          
         </div>
     );
