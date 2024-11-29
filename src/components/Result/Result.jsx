@@ -7,18 +7,18 @@ import human from "../../assests/man-woman.svg";
 import { Link } from 'react-router-dom';
 
 const Result = ({percentage}) => {
-    // const percentage = 80; // Progress percentage
-    const radius = 120; // Radius for the larger circle
-    const strokeWidth = 40; // Increased Stroke width for the progress bar
-    const circumference = 2 * Math.PI * radius; // Circumference of the circle
+    
+    const radius = 120; 
+    const strokeWidth = 40; 
+    const circumference = 2 * Math.PI * radius; 
 
-    // Calculate stroke offset based on the percentage
+    
     const strokeDashoffset = circumference - (percentage / 100) * circumference;
 
     return (
         <div className="result_container">
             <div className='res_link'>
-                <p>Home</p>
+                <Link to='/'>Home</Link>
                 <p>/</p>
                 <Link to="/">IVF Success Rate Calculator</Link>
                 <p>/</p>
@@ -40,40 +40,40 @@ const Result = ({percentage}) => {
                         width="300"
                         height="300"
                         viewBox="0 0 300 300"
-                        style={{ transform: 'rotate(-90deg)' }} // Start progress from the top
+                        style={{ transform: 'rotate(-90deg)' }} 
                     >
-                        {/* Background circle */}
+                       
                         <circle
                             cx="150"
                             cy="150"
                             r={radius}
                             fill="none"
-                            stroke="rgba(91, 212, 137, 0.3)" // Light green background
+                            stroke="rgba(91, 212, 137, 0.3)" 
                             strokeWidth={strokeWidth}
                         />
-                        {/* Progress circle */}
+                     
                         <circle
                             cx="150"
                             cy="150"
                             r={radius}
                             fill="none"
-                            stroke="rgba(91, 212, 137, 1)" // Dark green for progress
+                            stroke="rgba(91, 212, 137, 1)"
                             strokeWidth={strokeWidth}
-                            strokeLinecap="round" // Rounded edges
+                            strokeLinecap="round" 
                             strokeDasharray={circumference}
                             strokeDashoffset={strokeDashoffset}
                             style={{
-                                transition: 'stroke-dashoffset 0.5s ease-in-out', // Smooth animation
+                                transition: 'stroke-dashoffset 0.5s ease-in-out',
                             }}
                         />
-                        {/* Inner background circle */}
+                       
                         <circle
                             cx="150"
                             cy="150"
-                            r={radius - strokeWidth / 2} // Adjust radius to touch the circumference
-                            fill="#032706" // Dark green background for the inner circle
+                            r={radius - strokeWidth / 2} 
+                            fill="#032706" 
                         />
-                        {/* Group for fixing text rotation */}
+                        
                         <g style={{ transform: 'rotate(90deg)', transformOrigin: '150px 150px' }}>
                             <text
                                 x="50%"

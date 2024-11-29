@@ -34,8 +34,7 @@ const Calculator = ({setPercentage}) => {
     const [ageRange, setAgeRange] = useState("");
     const [successRate, setSuccessRate] = useState(null);
     const calculateSuccessRate = () => {
-        let rate = 50; // Base success rate
-
+        let rate = 50;
         // Age range impact
         switch (ageRange) {
             case "under30": rate += 20; break;
@@ -62,14 +61,14 @@ const Calculator = ({setPercentage}) => {
 
         // Clamp the rate between 0 and 100
         rate = Math.max(0, Math.min(100, rate));
-        setSuccessRate(rate.toFixed(2)); // Round to 2 decimal places
+        setSuccessRate(rate.toFixed(2)); 
         setPercentage(rate.toFixed(2));
     };  
 
     return (
         <div className='calculator_container'>
             <div className='calc_link'>
-                <p>Home</p>
+                <Link to='/'>Home</Link>
                 <p>/</p>
                 <Link to="/" className='link_text'>IVF Success Rate Calculator</Link>
             </div>
@@ -128,7 +127,7 @@ const Calculator = ({setPercentage}) => {
                     <div
                         id="selectValue"
                         style={{
-                            left: `${sliderValue}%`, // Dynamically position the value indicator
+                            left: `${sliderValue}%`, 
                         }}
                     >
                         {sliderValue}
@@ -136,7 +135,7 @@ const Calculator = ({setPercentage}) => {
                     <div
                         id="progressBar"
                         style={{
-                            width: `${sliderValue}%`, // Update progress bar width dynamically
+                            width: `${sliderValue}%`, 
                         }}
                     />
                 </div>

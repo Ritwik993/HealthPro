@@ -35,13 +35,13 @@
 
 .radio-option input[type="radio"] {
     appearance: none;
-    /* Remove default radio styles */
+  
     width: 20px;
     height: 20px;
     border: 2px solid #ff6a6a;
-    /* Border color */
+   
     border-radius: 50%;
-    /* Circular shape */
+    
     margin-right: 10px;
     outline: none;
     position: relative;
@@ -57,16 +57,16 @@
 .radio-option [type="radio"]:before {
     content: "";
     width: 10px;
-    /* Size of the inner dot */
+   
     height: 10px;
     background-color: #ff6a6a;
-    /* Dot color */
+    
     border-radius: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    /* Initially hidden */
+    
     transition: transform 0.2s ease-in-out;
 }
 
@@ -104,16 +104,16 @@
     position: relative;
     width: 100%;
     max-width: 372px;
-    /* Limit width for consistency */
+    
     margin: 0 auto;
-    /* Center align the slider */
+    
     margin-top: 40px;
 }
 
 #slider {
     appearance: none;
     width: 100%;
-    /* Adjust width dynamically */
+    
     height: 8px;
     outline: none;
     border-radius: 17px;
@@ -121,7 +121,7 @@
     margin: 0;
     position: relative;
     z-index: 2;
-    /* Ensure it is above the progress bar */
+    
 }
 
 #slider::-webkit-slider-thumb {
@@ -133,33 +133,31 @@
     cursor: pointer;
     position: relative;
     z-index: 3;
-    /* Ensure thumb is above the progress bar */
+   
 }
 
 #progressBar {
     position: absolute;
     height: 8px;
-    /* Match the height of the slider track */
+  
     background-color: #F48265;
-    /* Same as slider thumb color */
+   
     border-radius: 17px;
-    /* Match slider track rounding */
+   
     top: 10px;
-    /* Align with the top of the slider */
+    
     left: 0;
-    /* Start from the beginning */
+   
     width: 0;
-    /* Initial width (updated dynamically) */
+ 
     z-index: 5;
-    /* Place below the slider */
-    /* transition: width 0.2s ease-in-out; */
-    /* Smooth width adjustment */
+    
 }
 
 #selectValue {
     position: absolute;
     bottom: 30px;
-    /* Place the value above the slider */
+   
     background-color: #F48265;
     color: white;
     font-size: 16px;
@@ -169,9 +167,9 @@
     text-align: center;
     white-space: nowrap;
     transform: translateX(-50%);
-    /* Center the value above the thumb */
+    
     pointer-events: none;
-    /* Ensure the value doesn't interfere with slider interactions */
+   
 }
 
 
@@ -293,13 +291,13 @@ Section 3
 
 .section4_label {
     display: block;
-    /* Stack checkboxes vertically */
+   
     margin: 10px 0;
-    /* Space between checkboxes */
+    
     font-size: 16px;
-    /* Adjust font size */
+   
     cursor: pointer;
-    /* Change cursor to pointer on hover */
+   
     display: flex;
     align-items: center;
 }
@@ -307,7 +305,7 @@ Section 3
 
 input[type="checkbox"] {
     margin-right: 10px;
-    /* Space between checkbox and label */
+    
 }
 
 .bold {
