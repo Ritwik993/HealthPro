@@ -26,7 +26,7 @@ const Result = ({percentage}) => {
                 <Link to="/result" className='link_text'>Result</Link>
             </div>
 
-            <div className='responsive'>
+            <div className='responsive1'>
                 <Link to='/' className='responsive_link1'> {`← `} IVF Success Rate Calculator</Link>
             </div>
 

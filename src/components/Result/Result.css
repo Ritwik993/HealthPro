@@ -46,7 +46,7 @@
     font-weight: 500;
 }
 
-.responsive{
+.responsive1{
    display: none;
 }
 
@@ -163,12 +163,15 @@
         display: none;
     }
 
-    .responsive{
+    .responsive1{
         display: block;
         display: flex;
         gap: 20px;
         justify-content: flex-start;
-        align-items: center;
+        text-align: left;
+        width: 100%;
+        padding-left: 20px;
+        /* align-items: center; */
     }
 
     .responsive_link1{
